@@ -1,0 +1,137 @@
+<style type="text/css">
+    .result_wrapper{
+        position: relative;
+        background: url(assets/image/supporting/bg-link-supporting.png) no-repeat center / cover;
+        padding: 3.183023872679045vh;
+    }
+    .button_text_wrapper{
+        position: absolute;
+        width: 100%;
+        bottom: 3.183023872679045vh;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 0 5.305039787798409vh;
+    }
+    .text_wrapper{
+        min-height: 15vh;
+        background: #FFF;
+        color: #000;
+        width: 100%;
+        margin-bottom: 2.1220159151193636vh;
+        padding: 4.244031830238727vh 3.183023872679045vh;
+        border: solid 2px #000;
+    }  
+    .ribbon_result{
+        position: relative;
+    }
+
+    .ribbon_result .text_ribbon_result{
+        font-weight: bold;
+        font-size: 3.5vh;
+        /*position: absolute;*/
+        /*top: 0;*/
+        width: 100%;
+        color: #FFFFFF;
+        padding-top: 7.5vh;
+    }
+
+    .video_wrapper{
+        position: absolute;
+        overflow-y: hidden;
+        top: 0;
+        width: 100%;
+    }
+    
+    .video_wrapper video{
+        // height: unset;
+        height: 100%;
+        object-fit: cover;
+        background: white;
+    }
+
+    .video_wrapper .img_video{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        object-fit: cover;
+        display: none;
+    }
+
+    .button_wrapper button{
+        color: white;
+        border-radius: 28px;
+        background: #5469E3;
+        border: 1px solid rgb(255, 255, 255);
+        width: 100%;
+    }
+</style>
+<div class="slider-content noselect" data-role="page" data-prev="" data-next="" current_sub="0" index="-1" id="result">
+    <div class="wrap" style="padding: 0px;position: relative;">
+        <div class="result_wrapper">
+            <div class="ribbon_result">
+                <!-- <img src="assets/image/result/header_blue.png" style="width: 100%;"> -->
+                <div class="text_ribbon_result">EXPLORE THE <br><span style="color: #FFFF6D;">SUPPORTING MODULE</span> <br>TO MAKE YOU BETTER!</div>
+            </div>
+            <div class="stage_wrapper" style="padding-top: 7.2vh;">
+               <!--  <div id="stage-1" style="
+                    background: url(assets/image/supporting/btn-link-supporting-01.png);
+                    background-size: cover;
+                    background-position: center;
+                    height: 12.6vh;
+                    border: 1px solid #76EFFF;
+                    border-radius: 16px;" >
+                </div> -->
+
+                <a id="stage-1" href="">
+                    <img src="assets/image/supporting/btn-link-supporting-01-02.png" style="
+                        border: 1px solid #76EFFF;
+                        border-radius: 16px;
+                        width: 100%;"
+                    >
+                </a>
+            </div>
+            <div class="button_text_wrapper">
+               <!--  <div class="text_wrapper">
+                    Segera laksanakan misi berikutnya untuk menangkap Lord X!
+                </div> -->
+                <div class="button_wrapper">
+                    <button class="button btn-standard btn-quit" style="color: white;">
+                        QUIT
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function(){
+        let id_moduls_arr = [
+            {
+                "module_name":"Akad yang Digunakan dalam Produk Syariah",
+                "module_id":"48d44704231f4580c1d8af5b7641c1ba"
+            }
+        ];
+
+        //append url
+        console.log(game);
+        $("#stage-1").attr("href",game.base_url+"/url/?id="+id_moduls_arr[0]["module_id"]);
+
+        game.scorm_helper.setSlide(0);
+
+        $(".button_wrapper .btn-quit").unbind().click(function(){
+            console.log("quit");
+            let src = "assets/audio/sound_button_result.wav";
+            game.audio.audio_dynamic(src).play();
+
+            try{
+                var btn_back = parent.top.document.getElementsByClassName("back-button")[0];
+                btn_back.click();
+            }
+            catch(e){
+                top.window.close();
+            }
+        });
+    });
+</script>

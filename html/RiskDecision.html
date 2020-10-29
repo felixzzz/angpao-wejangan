@@ -1,0 +1,133 @@
+<style type="text/css">
+.isitulisan{
+  position: relative;
+  text-align: center;
+  max-height: 7.5em;
+  width: 100%;
+  padding: 0 1.5em;
+}
+.isitulisan img{
+  width: 5%;
+}
+.isitulisan p{
+  background: #FFF;
+  border-radius: 0 0 1em 1em;
+  padding: 0.5em 2.5em;
+  margin: 0;
+}
+.isiketerangan{
+  border-radius: 1em 1em 0 0;
+  background-color: #ED3B57;
+  padding: 0.5em 0;
+}
+.gambarorang{
+  position: absolute;
+  left: 50%;
+  top: 27%;
+  transform: translateX(-50%);
+}
+.thinking{
+  width: 0%;
+  position: absolute;
+  left: 50%;
+  top: 23%;
+  display: none;
+}
+.talking{
+  width: 15%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 40%;
+  display: none;
+}
+.processing{
+  width: 15%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 15%;
+  z-index: 1;
+  display: none;
+}
+.foreground{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.gambargerak{
+  width: 100%;
+}
+.kotak_wrapper{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+.kotakgambar{
+  padding: 1vh;
+}
+.kotakgambar p{
+  color: black;
+}
+.star-wrapper{
+  width: 100%;
+  position: relative;
+  z-index: 99;
+  text-align: center;
+  padding: 0.5em 0px;
+}
+.star-wrapper .star{
+  width: 2em;
+  height: 2em;
+  display: inline-block;
+}
+.star-wrapper .star+.star{
+  margin-left: 0.25em;
+}
+.star-wrapper .star.active{
+  background-position: 3px;
+}
+</style>
+
+<div class="kotakbesar" style=" background-size: cover; width: 100%; height: 100%;">
+	<div class="star-wrapper"></div>
+	<div class="isitulisan">
+		<div class="isiketerangan" style="background-color: #ED3B57;">
+      <img src="assets/image/RiskDecision/Icon_Person.png">
+      <strong class="tiperisk" style="color:white;">Tipe Risk</strong>
+    </div>
+    <p class="isirisk">Fixed Rate 5 years <br>Protected Product</p>
+	</div>
+
+  <div class="kotakorang">
+    <img class="gambarorang col-xs-4" src="#">
+    <img class="thinking" src="assets/image/RiskDecision/Bubble_THINK.png">
+  </div>
+
+  <div>
+    <img class="talking" src="assets/image/RiskDecision/Bubble_TALK.png">
+  </div>
+
+  <div>
+    <img class="processing" src="assets/image/RiskDecision/Bubble_LOADING.png">
+  </div>
+
+  <div class="foreground">
+    <img style="width: 100%;" src="assets/image/RiskDecision/Foreground.png">
+  </div>
+
+  <div class="kotak_wrapper">
+    <div class="kotakgambar col-xs-4" index="0">
+        <img src="assets/image/RiskDecision/Button_Market-Linked-Deposit.png" style="width: 100%;">
+    </div>
+    <div class="kotakgambar col-xs-4" index="1">
+        <img src="assets/image/RiskDecision/Button_Market-Linked-Deposit.png" style="width: 100%;">
+    </div><div class="kotakgambar col-xs-4" index="2">
+        <img src="assets/image/RiskDecision/Button_Market-Linked-Deposit.png" style="width: 100%;">
+    </div>
+  </div>  
+</div>

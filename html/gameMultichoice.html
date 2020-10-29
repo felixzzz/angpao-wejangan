@@ -1,0 +1,437 @@
+<style>
+   #popupFeedbackMultichoice .manCustomer1{
+    position: absolute;
+    left: 0;
+    bottom: 5vh;
+    /* width: 100%; */
+    height: 70%;
+    right: 0;
+    /* right: 0; */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /*set page modal soal */
+    .modal_wrapper{
+      position: absolute;
+      height: 100%;
+      top: 0;
+      left: 50%;
+      /*padding: 2.1220159151193636vh;*/
+      transform: translateX(-50%);
+    }
+
+    .modal_wrapper .soal{
+      color: black;
+      background: rgb(255 255 255 / 0.85);
+      border-radius: 8px;
+      border: 1px solid white;
+      position: absolute;
+      bottom: 6.4%;
+      left: 6.4%;
+      width: 87.2%;
+      height: 22vh;
+      overflow-y: auto;
+      z-index: 0;
+      font-size: 2.4vh;
+      padding: 3vh;
+      padding-bottom: 1vh;
+      text-align: center;
+    }
+    .modal_wrapper .header_soal .logo_and_time{
+      height: 100%;
+      float: left;
+    }
+    .modal_wrapper .header_soal .logo_and_time img{
+      height: 100%;
+    }
+    .modal_wrapper .time_soal{
+       position: relative;
+        height: 100%;
+        float: right;
+    }
+    .modal_wrapper .time_soal span{
+      position: absolute;
+      left: 40%;
+      top: 60%;
+      font-family: BebasBold;
+      font-size: 3vh;
+      color: #FFF;
+      transform: translate(-50%, -50%);
+    }
+    .modal_wrapper .soal_wrapper{
+      width: 100%;
+      height: 88vh;
+      text-align: center;
+    }
+    .modal_wrapper .soal_wrapper .title_soal{
+      width: 100%;
+      background: #9398BA;
+      color: #FFF;
+      font-weight: 700;
+      border-radius: 2.1220159151193636vh;
+      padding: 1.5915119363395225vh 2.1220159151193636vh;
+      margin-top: 2.1220159151193636vh;
+      margin-left: 0;
+      margin-right: 0;
+      display: flex;
+    }
+    .modal_wrapper .soal_wrapper .intro_wrapper{
+      text-align: left;
+      width: 100%;
+      max-height: 62vh;
+      background: #FFF;
+      border-radius: 2.1220159151193636vh;
+      border: solid 2px #C4DFEF;
+      box-sizing: border-box;
+      margin-top: 2.1220159151193636vh;
+    }
+    .modal_wrapper .soal_wrapper .intro_wrapper .intro_soal{
+      max-height: 55vh;
+      overflow-y: auto;
+      margin: 3.183023872679045vh 1.0610079575596818vh 3.183023872679045vh 0px;
+      padding: 0px 4.774535809018568vh;
+    }
+    .modal_wrapper .soal_wrapper .question_and_choice{
+        height: 100%;
+    }
+    .modal_wrapper .soal_wrapper .question_and_choice .choices{
+      background: white;
+      /* max-height: 52vh; */
+      padding: 3.9em 1.6em;
+      overflow-y: auto;
+      height: 62.5vh;
+    }
+    .modal_wrapper .soal_wrapper .question_and_choice .choices .choice{
+      width: 100%;
+      background: #FFF;
+      color: #000;
+      padding: 1em;
+      border-radius: 1em;
+      border: solid 2px #8BB2E6;
+      box-sizing: border-box;
+    }
+    .modal_wrapper .soal_wrapper .question_and_choice .choices .choice+.choice{
+      margin-top: 0.5em;
+    }
+    .modal_wrapper .soal_wrapper .question_and_choice .choices .choice.active{
+      color: #1D8BEC;
+      background: #FFF;
+      border: solid 2px #1D8BEC;
+      font-weight: bold;
+    }
+    .modal_wrapper .button_wrapper{
+        position: relative;
+        margin-top: 2.1220159151193636vh;
+        text-align: center;
+    }
+    .modal_wrapper .btn-back_game,.modal_wrapper .btn-next_soal,.modal_wrapper .btn_next_submit,.modal_wrapper .truefalse_wrapper,.modal_wrapper.konteks .question_and_choice,.modal_wrapper.quiz .intro_wrapper{
+      display: none;
+    }
+    .modal_wrapper.konteks .btn-next_soal,.modal_wrapper.quiz .btn-back_game{
+      display: block;
+    }
+
+    /* CSS talk bubble */
+    .modal_wrapper .question_and_choice .talk-bubble {
+      margin: 40px;
+      display: inline-block;
+      position: relative;
+      width: 60%;
+      height: auto;
+      background-color: white;
+      border: 8px solid grey;
+      left:9%;
+      top:-0.8vh;
+    }
+    /*.border{
+      border: 20px solid grey;
+    }*/
+    .modal_wrapper .question_and_choice .round{
+      border-radius: 30px;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+
+    }
+    /* talk bubble contents */
+    .modal_wrapper .question_and_choice .talk-bubble .talktext{
+      padding: 1em;
+      text-align: left;
+      line-height: 1.5em;
+      max-height: 21vh;
+    }
+    .modal_wrapper .question_and_choice .talk-bubble .talktext p{
+      /* remove webkit p margins */
+      -webkit-margin-before: 0em;
+      -webkit-margin-after: 0em;
+      overflow-y: auto;
+      max-height: 18vh;
+      color: black;
+      font-family: 'Lato';
+      font-size: 2.4756852785145886vh;
+      font-weight: normal;
+    }
+    /*Right triangle, placed bottom left side slightly in*/
+    .modal_wrapper .question_and_choice .tri-right.border.btm-left:before {
+      content: ' ';
+      position: absolute;
+      width: 0;
+      height: 0;
+      left: -8px;
+      right: auto;
+      top: auto;
+      bottom: -40px;
+      border: 32px solid;
+      border-color: transparent transparent transparent #666;
+    }
+    .modal_wrapper .question_and_choice .tri-right.btm-left:after{
+      content: ' ';
+      position: absolute;
+      width: 0;
+      height: 0;
+      left: 0px;
+      right: auto;
+      top: auto;
+      bottom: -20px;
+      border: 22px solid grey;
+      border-color: transparent transparent transparent white;
+    }
+    .centered_col{
+      padding: 0;
+      margin: auto;
+      display: flex;
+      align-items: center;
+    }
+    .right{
+      color: #008834 !important;
+      background: #92F7B9 !important;
+      border: solid 2px #52D183 !important;
+    }
+    .wrong{
+      color: #C30F0F !important;
+      background: #FFADA2 !important;
+      border: solid 2px #FA7968 !important;
+    }
+    /*css five cards*/
+      .question_and_choice.five_cards .header_quiz{
+        height: 37.5vh;
+      }
+
+      .question_and_choice.five_cards .header_quiz img{
+        width: 20vh !important;
+        height: 100%;
+      }
+
+      .question_and_choice.five_cards .header_quiz .soal{
+        /*bottom: 7.9%;*/
+      }
+    /*End css five cards*/
+
+    /*Css mc card switch*/
+      .question_and_choice.mc_card_switch .header_quiz{
+        height: 37.5vh;
+      }
+
+      .modal_wrapper .soal_wrapper .question_and_choice.mc_card_switch .choices{
+        /*height: 69.5vh !important;*/
+        padding: 13.34vh 10.2vh 0;
+      }
+
+      .question_and_choice.mc_card_switch .choices{
+        padding: 13.34vh 10.2vh 0;
+      }
+
+      .question_and_choice.mc_card_switch .choices .card_wrapper{
+        width: 100%;
+        position: relative;
+      }
+
+      #popupSoalMultichoice .question_and_choice.mc_card_switch .img_card{
+        height: 30vh;
+        padding: 0;
+        width: 100%;
+        background: rgb(18 143 255 / .5);
+        display: table-cell;
+        vertical-align: middle;
+        font-size: 3.15vh;
+        font-weight: bold;
+        color: #FFFFFF;
+        z-index: 0;
+        border: 1px solid #0DDEFF;
+      }
+
+      #popupSoalMultichoice .question_and_choice.mc_card_switch .img_card_scanning {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        background: rgb(52 200 255 / .5);
+        transform: scaleX(0);
+        transform-origin: 0 50%;
+        transition: transform .5s ease-out;
+        border: 2px solid #7BEDFF;
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+      }
+
+      #popupSoalMultichoice .question_and_choice.mc_card_switch .img_card_scanning.active{
+        transform: scaleX(1);
+      }
+
+      #popupSoalMultichoice .question_and_choice.mc_card_switch .img_card.right{
+        background: rgb(18 255 155 / .8) !important;
+        font-family: Orbitron-Bold;
+        color: #fff !important;
+        font-size: 3.6vh;
+        border: 2px solid #A5FFE0 !important;
+      }
+
+      #popupSoalMultichoice .question_and_choice.mc_card_switch .img_card.wrong{
+        background: rgb(255 38 80 / .8) !important;
+        font-family: Orbitron-Bold;
+        color: #fff !important;
+        font-size: 3.6vh;
+        border: 2px solid #A5FFE0 !important;
+      }
+    /*End css mc card switch*/
+
+    /*Css loading*/
+      .question_and_choice .loading_wrapper{
+        display: none;width: 10vh;margin: 16vh auto;
+      }
+
+      .question_and_choice.mc_card_switch .loading_wrapper{
+        display: none;width: 100%;margin: 0 auto;
+      }
+    /*End css loading*/
+
+    /*Css timer quiz*/
+
+      #popupSoalMultichoice .timer_quiz{
+        display: block;
+        position: absolute;
+        width: 100%;
+        bottom: 4%;
+        left: 0;
+        padding: 0 1.8vh;
+      }
+
+      #popupSoalMultichoice .progress{
+        border: unset;
+        border-radius: unset;
+        background: #003E86;
+        height: 1.3vh;
+        padding:0;
+      }
+
+      #popupSoalMultichoice .progress-bar{
+        width: 100%;
+        background: #0DDEFF;
+        border-radius: unset;
+      }
+    /*End css timer quiz*/
+  /*set page game Multi*/
+  .manSoal{
+    bottom: 0;
+    height: 70%;
+    left: 46%;
+    position: absolute;
+  }
+  .manCustomer{
+    bottom: 0;
+    left: 5%;
+    height: 70%;
+    position: absolute;
+  }
+  .star-wrapper{
+    position: absolute;
+    right: 1.5em;
+    top: 0.5em;
+  }
+  .star-wrapper .star{
+    width: 2em;
+    height: 2em;
+    display: inline-block;
+  }
+  .star-wrapper .star+.star{
+    margin-left: 0.25em;
+  }
+/* CSS talk bubble */
+  .talk-bubble {
+    transform: rotate(-8deg) translateX(2%);
+    margin: 40px;
+    display: inline-block;
+    position: absolute;
+    width: 50%;
+    height: auto;
+    background-color: white;
+    border: 8px solid grey;
+    left:40%;
+    top: 2vh;
+    bottom: 0;
+    max-height: 23vh;
+  }
+  .round{
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+  }
+  /* talk bubble contents */
+  .talktext{
+    padding: 1em;
+    text-align: left;
+    line-height: 1.5em;
+    max-height: 21vh;
+  }
+  .talktext p{
+    /* remove webkit p margins */
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    overflow-y: auto;
+    max-height: 15vh;
+    color: black;
+    font-family: 'Lato';
+    font-size: 2.4756852785145886vh;
+    font-weight: normal;
+  }
+  /*Right triangle, placed bottom left side slightly in*/
+  .tri-right.border.btm-left:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -8px;
+    right: auto;
+    top: auto;
+    bottom: -40px;
+    border: 32px solid;
+    border-color: transparent transparent transparent #666;
+  }
+  .tri-right.btm-left:after{
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 0px;
+    right: auto;
+    top: auto;
+    bottom: -20px;
+    border: 22px solid grey;
+    border-color: transparent transparent transparent white;
+  }
+  .centered_col {
+    padding: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1D8BEC;
+    border-radius: 100px;
+  }
+</style>
+<div class="slider-content" style="background:url('assets/image/gameMultichoice/bg.jpg');background-repeat:no-repeat;background-position:bottom; background-size: cover;overflow: hidden;">
+</div>
+

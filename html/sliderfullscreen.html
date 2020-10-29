@@ -1,0 +1,118 @@
+<link rel="stylesheet" type="text/css" href="assets/plugins/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="assets/plugins/slick/slick-theme.css"/>
+<style type="text/css">
+	.video_potrait{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	.bg-video_popotrait{
+		width: 100%;
+		height: 100%;
+		background: #29AAE1;
+    }
+    .segitiga_wrapper{
+    	position: absolute;
+    	width: 10.610079575596817vh;
+    	left: 50%;
+    	top: 50%;
+    	transform: translate(-50%, -50%);
+    }
+    #video_slider{
+    	display: none;
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	object-fit: cover;
+    }
+    #igf_slider{
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	object-fit: cover;
+    }
+    .text_wrapper{
+    	position: absolute;
+	    width: 90%;
+	    height: auto;
+	    margin-bottom: 2em;
+	    padding: 1.5em;
+	    bottom: 0;
+	    left: 50%;
+	    transform: translateX(-50%);
+	    background: #FFF;
+	    border-radius: 1em;
+    }
+
+    .button_wrapper{
+    	position: absolute;
+    	bottom: 5%;
+    	left: 50%;
+    	transform: translateX(-50%);
+    }
+    .img_wrapper{
+    	height: 100%;
+    }
+    .img_slider{
+    	width: 100%;
+    	height: 100%;
+    	object-fit: cover;
+    }
+</style>
+<div class="slider-content" style="background: url('assets/image/slider/bg.png') white no-repeat bottom; background-size: cover;">
+	<div class="wrap" style="padding: 0;">
+		<div>
+			<ul id="ulasan" style="margin: 0;height: 100%;">
+				<li class="list_slider" style="position: relative;">
+					<div class="video_potrait">
+						<div class="bg-video_popotrait" style="
+							background-size: cover;
+    						background-position: top;">
+							<div class="segitiga_wrapper">
+								<img src="assets/image/slider/triangle.png" style="width: 100%;">
+							</div>
+						</div>
+						<video controlsList="nodownload" id="video_slider" playsinline poster="assets/image/other/bg.png">
+							<source src="assets/video/video.mp4" type="video/mp4">
+						</video>
+					</div>
+					<div class="rb-wrap">
+						<p class="ribbon_header" style="">
+							<strong class="ribbon-content">Pita Tiga Dimensi</strong>
+						</p>
+					</div>
+					<div class="img_wrapper">
+						<div class="gesture_wrapper" style="
+			              position: absolute;
+			              z-index: 2;
+			              bottom: 17%;
+			              right: 0;
+			              text-align: right;
+			              ">
+			            	<img src="assets/image/general_game_assets/Hand click 8.gif" style="width: 29.4vh;display: unset;">
+			            </div>
+						<!-- <img class="img_slider" src="#"> -->
+						<video controlsList="nodownload" id="igf_slider" playsinline autoplay loop poster="assets/image/other/bg.png">
+							<source src="#" type="video/mp4">
+						</video>
+					</div>
+					<div class="text_wrapper">
+						<p class="keterangan" style="margin: 0;"></p>
+						<div class="button_wrapper" style="position: relative;margin-top: 1.5em;">
+							<button class="button btn-standard btn-long btn-standard--submit2">
+	                          NEXT
+	                        </button>
+	                    </div>
+					</div>
+					<div class="button_wrapper">
+                        <button class="button btn-standard btn-long btn-standard--submit">
+                          NEXT
+                        </button>
+                    </div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>

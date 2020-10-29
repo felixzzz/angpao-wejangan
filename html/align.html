@@ -1,0 +1,292 @@
+<style type="text/css">
+	.align_wrapper{
+		width: 100%;
+		height: 100%;
+		background: url(assets/image/align/Background-Game.png) no-repeat center / cover;
+		padding: 3.183023872679045vh;
+	}
+	.align_wrapper.right .text_wrapper{
+		background: url(assets/image/align/Text-Box-Answer-Correct.png) no-repeat center / cover;
+		border-top: solid 3px #519096;
+	    border-left: solid 2px #519096;
+	    border-right: solid 2px #519096;
+	    border-bottom: solid 1px #519096;
+	}
+	.align_wrapper.right .answer_wrapper{
+		background: url(assets/image/align/Text-Box-Answer-Correct.png) no-repeat center / cover;
+		border-top: solid 3px #519096;
+	    border-left: solid 2px #519096;
+	    border-right: solid 2px #519096;
+	    border-bottom: solid 1px #519096;
+	}
+	.align_wrapper.right .text_wrapper .text_soal,.align_wrapper.right .answer_wrapper .answer{
+		background: #B7FCCB;
+		color: #18D186;
+		-webkit-text-stroke: 0.1px #199763;
+	}
+	.align_wrapper.wrong .text_wrapper{
+		background: url(assets/image/align/Text-Box-Answer-Wrong.png) no-repeat center / cover;
+		border-top: solid 3px #885B87;
+	    border-left: solid 2px #885B87;
+	    border-right: solid 2px #885B87;
+	    border-bottom: solid 1px #885B87;
+	}
+	.align_wrapper.wrong .answer_wrapper{
+		background: url(assets/image/align/Text-Box-Answer-Wrong.png) no-repeat center / cover;
+		border-top: solid 1px #885B87;
+	    border-left: solid 2px #885B87;
+	    border-right: solid 2px #885B87;
+	    border-bottom: solid 3px #885B87;
+	}
+	.align_wrapper.wrong .text_wrapper .text_soal,.align_wrapper.wrong .answer_wrapper .answer{
+		background: #FFC1CD;
+		color: #F44561;
+		-webkit-text-stroke: 0.1px #BC1E2E;
+	}
+	.align_wrapper.wrong .text_wrapper,.align_wrapper.right .text_wrapper,.align_wrapper.wrong .answer_wrapper,.align_wrapper.right .answer_wrapper{
+		display: table;
+	}
+	.align_wrapper.wrong .text_wrapper .text_soal,.align_wrapper.right .text_wrapper .text_soal,.align_wrapper.wrong .answer_wrapper .answer,.align_wrapper.right .answer_wrapper .answer{
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.align_wrapper.right .text_wrapper .text_soal,.align_wrapper.wrong .text_wrapper .text_soal{
+		font-size: 8.488063660477454vh;
+	}
+	.align_wrapper.right .text_wrapper .text_soal span,.align_wrapper.wrong .text_wrapper .text_soal span{
+		font-size: 3.183023872679045vh;
+	}
+	.align_wrapper.right .answer_wrapper .answer,.align_wrapper.wrong .answer_wrapper .answer{
+		font-size: 4.244031830238727vh;
+		line-height: normal;
+	}
+	.text_wrapper{
+		width: 100%;
+		height: 16.445623342175065vh;
+		background: url(assets/image/align/Text-Box-Question.png) no-repeat center / cover;
+	    padding: 1.0610079575596818vh;
+	    border-radius: 2px;
+	    border-top: solid 3px #516596;
+	    border-left: solid 2px #516596;
+	    border-right: solid 2px #516596;
+	    border-bottom: solid 1px #516596;
+	}
+	.text_wrapper .text_soal{
+		height: 13.793103448275861vh;
+	    color: rgba(10,33,60,0.7);
+	    text-align: center;
+	    background: #BFF2F5;
+	    padding: 1.5915119363395225vh 2.1220159151193636vh;
+	    line-height: 3.183023872679045vh;
+	    overflow-y: auto;
+	    font-weight: bold;
+	}
+	.lamp_wrapper{
+		position: relative;
+		margin-top: -1.0610079575596818vh;
+		margin-bottom: 0.5305039787798409vh;
+	}
+	.lamp_wrapper .lamp{
+		position: relative;
+	    width: 12%;
+	    display: inline-block;
+	}
+	.lamp_wrapper .lamp img{
+		width: 100%;
+		height: 100%;
+	}
+	.stage_wrapper{
+		position: relative;
+		height: 49vh;
+	}
+	.stage_wrapper .bg_soal{
+		width: 100%;
+		height:100%;
+		border-radius: 8px;
+	}
+	.switch_wrapper{
+		width: 100%;
+	    height: 100%;
+	    position: absolute;
+	    z-index: 99;
+	}
+	.choice_wrapper{
+		padding: 1.0610079575596818vh 0px;
+	}
+	.choice_wrapper .choice{
+		position: relative;
+	    width: 25%;
+	    display: inline-block;
+	}
+	.choice_wrapper .choice span{
+		position: absolute;
+	    left: 50%;
+	    top: 50%;
+	    color: #738EAB;
+	    font-size: 3.183023872679045vh;
+	    font-weight: 700;
+	    transform: translate(-50%, -50%);
+	}
+	.choice_wrapper .choice.active span{
+		color: #000;
+	}
+	.choice_wrapper .choice.wrong span{
+		color: #ffe4b0;
+	}
+	.choice_wrapper .choice.right span{
+		color: #DCFFC5;
+	}
+	.answer_wrapper{
+		width: 78%;
+		height: 14.721485411140584vh;
+	    float: left;
+	    background: url(assets/image/align/Text-Box-Answer.png) no-repeat center / cover;
+	    margin-right: 0.5305039787798409vh;
+	    padding: 1.0610079575596818vh;
+	    border-radius: 2px;
+	    border-top: solid 1px #516596;
+	    border-left: solid 2px #516596;
+	    border-right: solid 2px #516596;
+	    border-bottom: solid 3px #516596;
+	}
+	.answer_wrapper .answer{
+		height: 12.068965517241379vh;
+	    color: rgba(10,33,60,0.7);
+	    text-align: center;
+	    background: #FFE19E;
+	    padding: 1.5915119363395225vh 2.1220159151193636vh;
+	    line-height: 3.183023872679045vh;
+	    overflow-y: auto;
+	    font-weight: bold;
+	}
+	.button_wrapper{
+		width: 20%;
+		height: 14.721485411140584vh;
+    	float: left;
+	}
+	.short{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		border-radius: 8px;
+	}
+	#popupWinAlign .modal_wrapper{
+		padding: 0;
+	    position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
+	    overflow: hidden;
+	}
+	#popupWinAlign .modal_wrapper .bg_feedback{
+		position: absolute;
+		width: 145%;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	#popupWinAlign .modal_wrapper .parent{
+		position: relative;
+	    display: flex;
+	    align-items: center;
+	}
+	#popupWinAlign .modal_wrapper .parent p{
+		position: relative;
+		color: #0C1E48;
+	    font-size: 3.183023872679045vh;
+	    font-weight: bold;
+	    width: 51%;
+	    margin: 0;
+	    line-height: normal;
+	    padding-left: 4.244031830238727vh;
+	    -webkit-text-stroke: 0.1px #0C1E48;
+	}
+	#popupCompleteAlign .modal_wrapper{
+		padding: 0;
+	    position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
+	    overflow: hidden;
+	}
+	#popupCompleteAlign .modal_wrapper .bg_feedback{
+		position: absolute;
+		width: 145%;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	#popupCompleteAlign .modal_wrapper .parent{
+		position: relative;
+	    display: flex;
+	    align-items: center;
+	}
+	#popupCompleteAlign .modal_wrapper .parent p{
+		position: relative;
+		color: #0C1E48;
+	    font-size: 3.183023872679045vh;
+	    font-weight: bold;
+	    width: 51%;
+	    margin: 0;
+	    line-height: normal;
+	    padding-left: 4.244031830238727vh;
+	    -webkit-text-stroke: 0.1px #0C1E48;
+	}
+	::-webkit-scrollbar-thumb {
+		background: rgba(10,33,60,0.5);
+	}
+</style>
+<div class="align_wrapper">
+	<div class="text_wrapper">
+		<div class="text_soal">
+		</div>
+	</div>
+	<div class="lamp_wrapper">
+		<div class="lamp" index="0" style="left: 8%;">
+			<img src="assets/image/align/Question-Lamp-Off.png">
+		</div>
+		<div class="lamp" index="1" style="left: 13%;">
+			<img src="assets/image/align/Question-Lamp-Off.png">
+		</div>
+		<div class="lamp" index="2" style="left: 18%;">
+			<img src="assets/image/align/Question-Lamp-Off.png">
+		</div>
+		<div class="lamp" index="3" style="left: 23%;">
+			<img src="assets/image/align/Question-Lamp-Off.png">
+		</div>
+		<div class="lamp" index="4" style="left:28%;">
+			<img src="assets/image/align/Question-Lamp-Off.png">
+		</div>
+	</div>
+	<div class="stage_wrapper">
+		<div class="switch_wrapper">
+			<img class="switch" index="0" src="assets/image/align/Spark-Button-Off.png" style="position: absolute;width: 15%;height: auto;top: 28%;left: 42%;">
+			<img class="switch" index="1" src="assets/image/align/Spark-Button-Off.png" style="position: absolute;width: 15%;height: auto;top: 37%;left: 15%;">
+			<img class="switch" index="2" src="assets/image/align/Spark-Button-Off.png" style="position: absolute;width: 15%;height: auto;top: 47%;left: 34%;">
+			<img class="switch" index="3" src="assets/image/align/Spark-Button-Off.png" style="position: absolute;width: 15%;height: auto;top: 65%;left: 42%;">
+			<img class="switch" index="4" src="assets/image/align/Spark-Button-Off.png" style="position: absolute;width: 15%;height: auto;top: 58%;left: 70%;">
+		</div>
+		<img class="bg_soal" src="assets/image/align/Square-Question-Stage-1-Neutral.png">
+	</div>
+	<div class="choice_wrapper">
+	    <div class="choice" style="left: 11%;" index="0">
+	        <img src="assets/image/align/Answer-Button-Inactive.png" style="width: 100%;border-radius: 8px;">
+	        <span>A</span>
+	    </div>
+	    <div class="choice" style="left: 12%;" index="1">
+	        <img src="assets/image/align/Answer-Button-Inactive.png" style="width: 100%;border-radius: 8px;">
+	        <span>B</span>
+	    </div>
+	    <div class="choice" style="left: 13%;" index="2">
+	        <img src="assets/image/align/Answer-Button-Inactive.png" style="width: 100%;border-radius: 8px;">
+	        <span>C</span>
+	    </div>
+	</div>
+	<div class="answer_wrapper">
+    	<div class="answer">
+    	</div>
+    </div>
+    <div class="button_wrapper">
+    	<img src="assets/image/align/Submit-Button.png" style="width: 100%;height: 100%;border-radius: 8px;">
+	</div>
+</div>

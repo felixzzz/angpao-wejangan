@@ -1,0 +1,169 @@
+<style type="text/css">
+    .result_wrapper{
+        position: relative;
+        background: url(assets/image/cover/halaman_result.png) no-repeat center / cover;
+        padding: 3.183023872679045vh;
+    }
+    .button_text_wrapper{
+        position: absolute;
+        width: 100%;
+        bottom: 3.183023872679045vh;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 0 5.305039787798409vh;
+    }
+    .text_wrapper{
+        min-height: 15vh;
+        background: #FFF;
+        color: #000;
+        width: 100%;
+        margin-bottom: 2.1220159151193636vh;
+        padding: 4.244031830238727vh 3.183023872679045vh;
+        border: solid 2px #000;
+    }
+    .score_wrapper{
+        width: 15vh;
+        background: #FFF;
+        margin: 1.0610079575596818vh auto 0px;
+        padding: 1.0610079575596818vh;
+        border-radius: 2.1220159151193636vh;
+        line-height: 1.2;
+    }
+    .score_wrapper p{
+        margin: 0;
+        font-weight: 700;
+    }
+    .score_wrapper .score{
+        font-size: 6.36604774535809vh;
+    }
+    .star_wrapper{
+        margin-top: 1.0610079575596818vh;
+    }
+    .star_wrapper .star{
+        width: 4.244031830238727vh;
+        height: 4.244031830238727vh;
+        display: inline-block;
+        background: url(assets/image/cover/Bintang_default.png) no-repeat center / cover;
+    }
+    .star_wrapper .star.active{
+        background: url(assets/image/cover/Bintang_active.png) no-repeat center / cover;
+    }
+    .result_wrapper.lose .score{
+        color: #E23E37;
+    }
+    .result_wrapper.win .score{
+        color: #00AA65;
+    }
+    #popupCompleteAlign .modal_wrapper{
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+    }
+    #popupCompleteAlign .modal_wrapper .bg_feedback{
+        position: absolute;
+        width: 145%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #popupCompleteAlign .modal_wrapper .parent{
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    #popupCompleteAlign .modal_wrapper .parent p{
+        position: relative;
+        color: #0C1E48;
+        font-size: 3.183023872679045vh;
+        font-weight: bold;
+        width: 51%;
+        margin: 0;
+        line-height: normal;
+        padding-left: 4.244031830238727vh;
+        -webkit-text-stroke: 0.1px #0C1E48;
+    }
+    /*Css score*/
+        .score_wrapper{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 99;
+            height: auto;
+            max-width: 350px;
+            margin: 0.5em auto 0;
+            width: auto;
+            background: #FFF;
+            border: solid 1px #32649C;
+            border-radius: 20px;
+            box-sizing: border-box;
+        }
+        .score_wrapper div{
+            width: 100%;
+            /*border-bottom: solid 0.5305039787798409vh #97D1FF;*/
+            padding: 2px 10px;
+            border-radius: 24px;
+            box-sizing: border-box;
+        }
+        .label_score{
+            position: relative;
+            top: 50%;
+            left: 0;
+            font-size: 3.183023872679045vh;
+            font-weight: 700;
+            margin-right: 1.856763925729443vh;
+            vertical-align: middle;
+            color: #000;
+        }
+        .result_score{
+            color: #FFF;
+            font-size: 5.305039787798409vh;
+            background: #0B72C4;
+            border: solid 2px #0659B3;
+            border-radius: 20px;
+            padding: 0px 1.856763925729443vh;
+            vertical-align: middle;
+            box-sizing: border-box;
+        }
+        .button_wrapper .button{
+            border-radius: 28px;
+            background: rgb(84, 105, 227);
+            width: 100%;
+            padding: 1.5vh;
+            border: solid 1px #FFF;
+        }
+    /*End css score*/
+</style>
+<div class="slider-content noselect" data-role="page" data-prev="" data-next="" current_sub="0" index="-1" id="result">
+    <div class="wrap" style="padding: 0px;">
+        <div class="result_wrapper">
+            <div class="ribbon_result">
+                <img src="assets/image/cover/Group 4735.png" style="width: 100%;">
+            </div>
+            <div class="star_score_wrapper">
+                <div class="star_wrapper">
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                </div>
+                <div class="score_wrapper">
+                    <p class="text_score">SCORE</p>
+                    <p class="score">0</p>
+                </div>
+            </div>
+            <div class="button_text_wrapper">
+                <div class="text_wrapper">
+                    Segera laksanakan misi berikutnya untuk menangkap Lord X!
+                </div>
+                <div class="button_wrapper">
+                    <button class="button btn-standard btn-standard--submit2">
+                        Quit
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

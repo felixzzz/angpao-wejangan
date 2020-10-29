@@ -1,0 +1,110 @@
+<style type="text/css">
+	.game_wrapper{
+		display: table;
+		padding: 0 !important;
+	}
+	.stage_wrapper{
+		display: table-cell;
+		padding: 0 2.387267904509284vh;
+		vertical-align: middle;
+	}
+	.stage_wrapper .stage{
+		position: relative;
+		padding: 0.7957559681697612vh;
+	}
+	.stage.lock .img_stage{
+		filter: brightness(0.3);
+	}
+	.stage.active .img_stage{
+		animation: brightactive 1.5s ease-in-out infinite;
+	}
+	.padlock{
+		position: absolute;
+	    height: 56px;
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
+	}
+	.centered{
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.button_wrapper{
+		display: none;
+		position: absolute;
+	    left: 50%;
+	    bottom: 0;
+	    transform: translateX(-50%);
+	}
+	@-webkit-keyframes brightactive {
+		0%{
+			-webkit-filter: brightness(100%);
+			filter: brightness(100%);
+		}
+		50%{
+			-webkit-filter: brightness(150%);
+			filter: brightness(150%);		
+		}
+		100% { 
+			-webkit-filter: brightness(100%);
+			filter: brightness(100%);
+		}
+	}
+	@-moz-keyframes brightactive {
+		0%{
+			-webkit-filter: brightness(100%);
+			filter: brightness(100%);
+		}
+		50%{
+			-webkit-filter: brightness(150%);
+			filter: brightness(150%);
+		}
+		100% { 
+			-webkit-filter: brightness(100%);
+			filter: brightness(100%);
+		}
+	}
+	@-o-keyframes brightactive {
+		0%{
+			-webkit-filter: brightness(100%);
+			filter: brightness(100%);
+		}
+		50%{
+			-webkit-filter: brightness(150%);
+			filter: brightness(150%);
+		}
+		100% { 
+			-webkit-filter: brightness(100%);
+			filter: brightness(100%);
+		}
+	}
+	@keyframes brightactive {
+		0%{
+			-webkit-filter: brightness(100%);
+			filter: brightness(100%);
+		}
+		50%{
+			-webkit-filter: brightness(150%);
+			filter: brightness(150%);
+		}
+		100% { 
+			-webkit-filter: brightness(100%);
+			filter: brightness(100%);
+		}
+	}
+</style>
+<div class="slider-content" style="background: url(assets/image/game_map_stage/bg.png);background-size: cover;background-repeat: no-repeat;background-position: center;">
+	<div class="game_wrapper">
+		<div class="header_wrapper">
+			
+		</div>
+		<div class="stage_wrapper">
+	    	<div class="stage">
+	    		<img class="img_stage" src="assets/image/game_map_stage/list_1.png" style="width: 100%;">
+	    	</div>
+		</div>
+		<div class="button_wrapper">
+			<button class="button btn-standard btn-long btn-standard--submit button_finish">Finish</button>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,15 @@
+{
+	"environment":"game",
+	"course":"",
+	"module":"Masukan Nama Anda",
+	"list_slide":[
+		{
+			"slide":0,
+			"file":"html/cover.html"
+		},
+		{
+			"slide":1,
+			"file":"html/angpao.html"
+		}
+	]
+}

@@ -1,0 +1,188 @@
+{
+	"setting":{
+		"card_random_first_question":"",
+		"card_random_range_question":"",
+		"card_remember_timer":2,
+		"random":true,
+		"life_mode":true,
+		"duration":240,
+		"repeat_false_answer":true
+	},
+	"background":"url('assets/image/gameMultichoice/bg.png') no-repeat bottom / cover",
+	"evaluasi":false,
+	"list_question":
+	[
+		{
+			"index":0,
+			"type":"mc_card_switch",
+			"backgroundSoal":"url('assets/image/gameMultichoice/bg.png') no-repeat bottom / cover",
+			"question":"Seorang nasabah mengajukan pembiayaan atas dasar kerja sama usaha, dimana bagi hasil dilakukan berdasarkan pendapatan riil usaha tersebut, merupakan contoh akad.....",
+			"image":"",
+			"pilihan":[
+				{"index":0,"text":"AKAD <br>BAGI HASIL"},
+				{"index":1,"text":"AKAD <br>JUAL BELI"},
+				{"index":2,"text":"AKAD <br>LAINNYA"},
+				{"index":3,"text":"AKAD <br>SEWA"}
+			],
+			"jawaban":[0],
+			"feedback_benar_image":"MC_CIMB_Treasury_J05C03M05_ClearStage_Win_v.0.0.0.1.gif",
+			"feedback_salah_image":"MC_CIMB_Treasury_J05C03M05_ClearStage_Lose_v.0.0.0.1.gif"
+		},
+		{
+			"index":1,
+			"type":"mc_card_switch",
+			"backgroundSoal":"url('assets/image/gameMultichoice/bg.png') no-repeat bottom / cover",
+			"question":"Akad Wadi'ah adalah akad yang digunakan ketika nasabah membuka rekening tabungan di bank. Di CIMB Niaga Syariah, akad Wadi'ah termasuk ke dalam akad...",
+			"image":"",
+			"pilihan":[
+				{"index":0,"text":"AKAD <br>BAGI HASIL"},
+				{"index":1,"text":"AKAD <br>JUAL BELI"},
+				{"index":2,"text":"AKAD <br>LAINNYA"},
+				{"index":3,"text":"AKAD <br>SEWA"}
+			],
+			"jawaban":[2],
+			"feedback_benar_image":"MC_CIMB_Treasury_J05C03M05_ClearStage_Win_v.0.0.0.1.gif",
+			"feedback_salah_image":"MC_CIMB_Treasury_J05C03M05_ClearStage_Lose_v.0.0.0.1.gif"
+		},
+		{
+			"index":2,
+			"type":"mc_card_switch",
+			"backgroundSoal":"url('assets/image/gameMultichoice/bg.png') no-repeat bottom / cover",
+			"question":"Apabila dalam satu pembiayaan, pemilik aset melakukan pemindahan hak guna bangunan kepada nasabah (penyewa) dengan jangka waktu tertentu, maka akad yang digunakan adalah.....",
+			"image":"",
+			"pilihan":[
+				{"index":0,"text":"AKAD <br>BAGI HASIL "},
+				{"index":1,"text":"AKAD <br>JUAL BELI"},
+				{"index":2,"text":"AKAD <br>LAINNYA"},
+				{"index":3,"text":"AKAD <br>SEWA"}
+			],
+			"jawaban":[3],
+			"feedback_benar_image":"MC_CIMB_Treasury_J05C03M05_ClearStage_Win_v.0.0.0.1.gif",
+			"feedback_salah_image":"MC_CIMB_Treasury_J05C03M05_ClearStage_Lose_v.0.0.0.1.gif"
+		},
+		{
+			"index":3,
+			"type":"mc_card_switch",
+			"backgroundSoal":"url('assets/image/gameMultichoice/bg.png') no-repeat bottom / cover",
+			"question":"Kesepakatan yang terjadi antara bank dan nasabah, dimana kepemilikan objek berpindah tangan, maka berlaku akad.....",
+			"image":"",
+			"pilihan":[
+				{"index":0,"text":"AKAD <br>BAGI HASIL"},
+				{"index":1,"text":"AKAD <br>JUAL BELI"},
+				{"index":2,"text":"AKAD <br>LAINNYA"},
+				{"index":3,"text":"AKAD <br>SEWA"}
+			],
+			"jawaban":[1],
+			"feedback_benar_image":"MC_CIMB_Treasury_J05C03M05_ClearStage_Win_v.0.0.0.1.gif",
+			"feedback_salah_image":"MC_CIMB_Treasury_J05C03M05_ClearStage_Lose_v.0.0.0.1.gif"
+		},
+		{
+			"index":4,
+			"type":"mc_card_switch",
+			"backgroundSoal":"url('assets/image/gameMultichoice/bg.png') no-repeat bottom / cover",
+			"question":"Akad Murabahah termasuk ke dalam jenis akad.....",
+			"image":"",
+			"pilihan":[
+				 {"index":0,"text":"AKAD <br>BAGI HASIL"},
+				{"index":1,"text":"AKAD <br>JUAL BELI"},
+				{"index":2,"text":"AKAD <br>LAINNYA"},
+				{"index":3,"text":"AKAD <br>SEWA"}
+			],
+			"jawaban":[1],
+			"feedback_benar_image":"MC_CIMB_Treasury_J05C03M05_ClearStage_Win_v.0.0.0.1.gif",
+			"feedback_salah_image":"MC_CIMB_Treasury_J05C03M05_ClearStage_Lose_v.0.0.0.1.gif"
+		},
+		{
+			"index":5,
+			"type":"mc_card_switch",
+			"image":"",
+			"backgroundSoal":"url('assets/image/gameMultichoice/bg.png') no-repeat bottom / cover",
+			"question":"Pilihlah  akad yang digunakan CIMB Niaga Syariah dalam produk <i>financing</i>!",
+			"pilihan":[
+				{"index":0,"text":"AKAD <br>KAFALAH"},
+				{"index":1,"text":"AKAD <br>WAKALAH"},
+				{"index":2,"text":"AKAD <br>WADI'AH"},
+				{"index":3,"text":"AKAD <br>MURABAHAH"}
+			],
+			"jawaban":[3],
+			"feedback_benar_image":"MC_CIMB_Treasury_J05C03M05_ClearStage_Win_v.0.0.0.1.gif",
+			"feedback_salah_image":"MC_CIMB_Treasury_J05C03M05_ClearStage_Lose_v.0.0.0.1.gif"
+		},
+		{
+			"index":6,
+			"type":"mc_card_switch",
+			"backgroundSoal":"url('assets/image/gameMultichoice/bg.png') no-repeat bottom / cover",
+			"question":"Pilihlah akad yang digunakan CIMB Niaga Syariah dalam produk <i>funding</i>!",
+			"image":"",
+			"pilihan":[
+				{"index":0,"text":"AKAD <br>IJARAH"},
+				{"index":1,"text":"AKAD <br>MUDHARABAH"},
+				{"index":2,"text":"AKAD <br>MURABAHAH"},
+				{"index":3,"text":"AKAD <br>MUSYARAKAH"}
+			],
+			"jawaban":[1],
+			"feedback_benar_image":"MC_CIMB_Treasury_J05C03M05_ClearStage_Win_v.0.0.0.1.gif",
+			"feedback_salah_image":"MC_CIMB_Treasury_J05C03M05_ClearStage_Lose_v.0.0.0.1.gif"
+		},
+		{
+			"index":7,
+			"type":"mc_card_switch",
+			"backgroundSoal":"url('assets/image/gameMultichoice/bg.png') no-repeat bottom / cover",
+			"question":"Akad yang digunakan untuk giro dan tabungan adalah.....",
+			"image":"",
+			"pilihan":[
+				{"index":0,"text":"AKAD <br>WADI'AH & MUSYARAKAH"},
+				{"index":1,"text":"AKAD <br>QARDH & KAFALAH"},
+				{"index":2,"text":"AKAD <br>IMBT & MMQ"},
+				{"index":3,"text":"AKAD <br>WADI'AH & MUDHARABAH"}
+			],
+			"jawaban":[3],
+			"feedback_benar_image":"MC_CIMB_Treasury_J05C03M05_ClearStage_Win_v.0.0.0.1.gif",
+			"feedback_salah_image":"MC_CIMB_Treasury_J05C03M05_ClearStage_Lose_v.0.0.0.1.gif"
+		},
+		{
+			"index":8,
+			"type":"mc_card_switch",
+			"backgroundSoal":"url('assets/image/gameMultichoice/bg.png') no-repeat bottom / cover",
+			"question":"Manakah yang termasuk ke dalam jenis akad bagi hasil?",
+			"image":"",
+			"pilihan":[
+				{"index":0,"text":"AKAD <br>IJARAH"},
+				{"index":1,"text":"AKAD <br>MUDHARABAH"},
+				{"index":2,"text":"AKAD <br>MURABAHAH"},
+				{"index":3,"text":"AKAD <br>IMBT"}
+			],
+			"jawaban":[1],
+			"feedback_benar_image":"MC_CIMB_Treasury_J05C03M05_ClearStage_Win_v.0.0.0.1.gif",
+			"feedback_salah_image":"MC_CIMB_Treasury_J05C03M05_ClearStage_Lose_v.0.0.0.1.gif"
+		},
+		{
+			"index":9,
+			"type":"mc_card_switch",
+			"backgroundSoal":"url('assets/image/gameMultichoice/bg.png') no-repeat bottom / cover",
+			"question":"Manakah yang termasuk ke dalam jenis akad sewa?",
+			"image":"",
+			"pilihan":[
+				{"index":0,"text":"AKAD <br>IJARAH/IMBT"},
+				{"index":1,"text":"AKAD <br>WAKALAH"},
+				{"index":2,"text":"AKAD <br>MMQ"},
+				{"index":3,"text":"AKAD <br>WADI'AH"}
+			],
+			"jawaban":[0],
+			"feedback_benar_image":"MC_CIMB_Treasury_J05C03M05_ClearStage_Win_v.0.0.0.1.gif",
+			"feedback_salah_image":"MC_CIMB_Treasury_J05C03M05_ClearStage_Lose_v.0.0.0.1.gif"
+		}
+	],
+	"list_card":
+	[
+	],
+	"popup":{
+		"title":"",
+     	"image_logo":"header_popup_1.png",
+      	"list":[
+      		[
+      			"<img src='assets/image/gameMultichoice/popup-info-02.png' style='width:100%;'>"
+      		]
+      	]
+	}
+}

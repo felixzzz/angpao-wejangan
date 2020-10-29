@@ -1,0 +1,175 @@
+<style type="text/css">
+    .result_wrapper{
+        position: relative;
+        background: url(assets/image/cover/halaman_result.png) no-repeat center / cover;
+        padding: 3.183023872679045vh;
+    }
+    .button_text_wrapper{
+        position: absolute;
+        width: 100%;
+        bottom: 3.183023872679045vh;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 0 5.305039787798409vh;
+    }
+    .text_wrapper{
+        min-height: 15vh;
+        background: #FFF;
+        color: #000;
+        width: 100%;
+        margin-bottom: 2.1220159151193636vh;
+        padding: 4.244031830238727vh 3.183023872679045vh;
+        border: solid 2px #000;
+    }
+     /*Css score*/
+        .score_wrapper{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 99;
+            height: auto;
+            max-width: 350px;
+            margin: 0.5em auto 0;
+            width: auto;
+            background: #FFF;
+            border: solid 1px #32649C;
+            border-radius: 20px;
+            box-sizing: border-box;
+        }
+        .score_wrapper div{
+            width: 100%;
+            /*border-bottom: solid 0.5305039787798409vh #97D1FF;*/
+            padding: 2px 10px;
+            border-radius: 24px;
+            box-sizing: border-box;
+        }
+        .label_score{
+            position: relative;
+            top: 50%;
+            left: 0;
+            font-size: 3.183023872679045vh;
+            font-weight: 700;
+            margin-right: 1.856763925729443vh;
+            vertical-align: middle;
+            color: #000;
+        }
+        .result_score{
+            color: #FFF;
+            font-size: 5.305039787798409vh;
+            background: #0B72C4;
+            border: solid 2px #0659B3;
+            border-radius: 20px;
+            padding: 0px 1.856763925729443vh;
+            vertical-align: middle;
+            box-sizing: border-box;
+        }
+        .star_wrapper{
+            margin-top: 1.0610079575596818vh;
+        }
+        .star_wrapper .star{
+            width: 4.244031830238727vh;
+            height: 4.244031830238727vh;
+            display: inline-block;
+            background: url(assets/image/cover/Bintang_default.png) no-repeat center / cover;
+        }
+        .star_wrapper .star.active{
+            background: url(assets/image/cover/Bintang_active.png) no-repeat center / cover;
+        }
+        .result_wrapper.lose .score{
+            color: #E23E37;
+        }
+        .result_wrapper.win .score{
+            color: #00AA65;
+        }
+    /*End css score*/
+
+    .ribbon_result{
+        position: relative;
+    }
+
+    .ribbon_result .text_ribbon_result{
+        font-weight: bold;
+        font-size: 3.5vh;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        color: #FFFFFF;
+        padding-top: 1.5vh;
+        font-family: Orbitron-Medium;
+    }
+
+    .video_wrapper{
+        position: absolute;
+        overflow-y: hidden;
+        top: 0;
+        width: 100%;
+    }
+    
+    .video_wrapper video{
+        height: 100%;
+        object-fit: cover;
+        object-position: bottom;
+        background: white;
+    }
+
+    .video_wrapper .img_video{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        object-fit: cover;
+        display: none;
+    }
+
+    .button_wrapper button{
+        color: white;
+        border-radius: 28px;
+        background: #5469E3;
+        border: 1px solid rgb(255, 255, 255);
+        width: 100%;
+    }
+</style>
+<div class="slider-content noselect" data-role="page" data-prev="" data-next="" current_sub="0" index="-1" id="result">
+    <div class="wrap" style="padding: 0px;position: relative;">
+         <div class="video_wrapper">
+            <video id="video" preload="none" controlsList="nodownload" playsinline muted="muted" poster="assets/image/other/bg.png">
+                <source src="" type="video/mp4">
+            </video>
+            <img class="img_video" src="assets/image/cover/bg_video.png" style="">
+        </div>
+        <div class="result_wrapper">
+            <div class="ribbon_result">
+                <img src="assets/image/result/header_blue.png" style="width: 100%;">
+                <div class="text_ribbon_result">Text</div>
+            </div>
+            <div class="star_score_wrapper">
+                <div class="star_wrapper">
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                </div>
+                 <div class="score_wrapper" style="color: rgb(0, 0, 0); background: rgb(255, 255, 255);">
+                    <div>
+                        <span class="label_score">SCORE</span><span class="result_score">0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="button_text_wrapper">
+                <div class="text_wrapper">
+                    Segera laksanakan misi berikutnya untuk menangkap Lord X!
+                </div>
+                <div class="button_wrapper">
+                    <button class="button btn-standard btn-game" style="color: white;">
+                        NEXT
+                    </button>
+                    <button class="button btn-standard btn-game-2" style="display: none;">
+                        NEXT
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

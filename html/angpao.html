@@ -1,0 +1,34 @@
+<link rel="stylesheet" type="text/css" href="assets/css/card.css">
+
+<div class="slider-content" style="background: #8CC6E0;display: table;">
+	<div class="image_wrapper" style="
+    	display: table-cell;
+    	vertical-align: middle;
+	">
+		<img class="img_click" src="assets/image/cover/angpao.png" style="width: 100%;">
+	</div>
+</div>
+
+<script>
+	$(".img_click").click(function(){
+		let image_wejangan = "wejangan_1.png";
+		let url = "http://localhost:8012/project_angpao_wejangan/assets/image/wejangan/"+image_wejangan;
+	    console.log(url);
+
+	    // try{
+	    // 	console.log("test");
+	    //     // window.open(url, '_blank');
+	    // }catch(e){
+	        var link = document.createElement('a');
+	        link.href = url;
+	        link.target = '_blank';
+	        link.download = 'img.png.png';
+
+	        document.body.appendChild(link);
+
+	        link.click();
+
+	        document.body.removeChild(link);
+	    // }
+	});
+</script>

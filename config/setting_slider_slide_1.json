@@ -1,0 +1,42 @@
+{
+	"background":"white no-repeat bottom / cover",
+	"audio":"",
+	"list_slider":
+	[
+		{
+			"video_potrait":"MG_CIMB_CNSyariah_11102.02_BGM_v.0.0.0.2.mp4",
+			"button":[
+				{
+					"text":"SKIP VIDEO",
+					"css":{
+						"border-radius":"28px",
+						"border":"solid 2px #ffff",
+	        			"background":"#eb1c2400",
+						"color":"#FFF",
+						"font-weight":"700",
+						"padding":"0 4.244031830238727vh",
+						"min-width": "32.53vh"
+					}
+				}
+			],
+			"style":{
+				".bg-video_popotrait":{
+					"background": "url('assets/image/opening/video_cover.png')",
+					"background-size":"100% 100%"
+				}
+			}
+		}
+	],
+	"list_tutorial":[
+		{
+			"title":"",
+			"image":"MC_CIMB_GI_5503.01_Tutorial_01_v.0.0.0.1.gif",
+			"desc":"Tap tombol <i>SEARCH</i> untuk menemukan area pemicu titik api."
+		},
+		{
+			"title":"",
+			"image":"MC_CIMB_GI_5503.01_Tutorial_02_v.0.0.0.1.gif",
+			"desc":"<i>Tap</i> pada area merah untuk melemahkan titik api, dengan menjawab pilihan yang tepat dan raih <i>score</i> min. 75"
+		}
+	]
+}

@@ -1,0 +1,66 @@
+{
+	"score":true,
+	"background":"",
+	"background_video":"MC_CNSyariah_11.102.02_Result_Win_v.0.0.0.1.mp4",
+	"background_lose":"",
+	"background_lose_video":"MC_CNSyariah_11.102.02_Result_Lose_v.0.0.0.1.mp4",
+	"win":{
+		"ribbon":"header_blue.png",
+		"ribbon_text":"Congratulations!",
+		"description":{
+			"text":"“Selamat! Kamu telah berhasil mengingkatkan kemampuanmu dan siap menghadapi nasabah dengan rekomendasi yang sesuai!”",
+			"css":{
+				"color": "#000000",
+			    "background": "rgb(255, 255, 255)",
+			    "border": "2px solid #8BB2E6",
+			    "border-radius": "16px"
+			}
+		},
+		"score_css":{
+			"color":"#000",
+			"background":"#FFF",
+			"border":"none",
+			"border-radius":"16px"
+		},
+		"button":{
+			"text":"<strong>NEXT</strong>",
+			"gotoSlide":4,
+			"button_css":{
+				
+			}
+		}
+	},
+	"lose":{
+		"ribbon":"header_red.png",
+		"ribbon_text":"Try Again!",
+		"description":{
+			"text":"Jangan patah semangat ya! Coba pelajari kembali dengan membuka <b>supporting modul</b>.",
+			"css":{
+				"color": "#000000",
+			    "background": "rgb(255, 255, 255)",
+			    "border": "2px solid #8BB2E6",
+			    "border-radius": "16px"
+			}
+		},
+		"score_css":{
+			"color":"#000",
+			"background":"#FFF",
+			"border":"none",
+			"border-radius":"16px"
+		},
+		"button":{
+			"text":"<strong>RESTART QUIZ</strong>",
+			"gotoSlide":2,
+			"button_css":{
+				"margin-bottom": "0.5em"
+			}
+		},
+		"button_2":{
+			"text":"<strong>NEXT</strong>",
+			"gotoSlide":4,
+			"button_css":{
+				
+			}
+		}
+	}
+}

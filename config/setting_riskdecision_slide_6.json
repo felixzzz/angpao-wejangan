@@ -1,0 +1,143 @@
+{
+	"slide_back":5,
+	"background":"url('assets/image/RiskDecision/Background.png') white no-repeat bottom / cover",
+	"isRandom":false,
+	"list_question":
+	[
+		{
+			"person":{
+				"idle":"assets/image/RiskDecision/MC_CIMB_J05C03M05_Chara idle1_01_v.0.0.0.1.png",
+				"up":"assets/image/RiskDecision/MC_CIMB_J05C03M05_Chara walk1_02_v.0.0.0.1.png",
+				"down":"assets/image/RiskDecision/MC_CIMB_J05C03M05_Chara walk1_01_v.0.0.0.1.png"
+			},
+			"risk":"Conservative Risk",
+			"risk_desc":"Fixed Rate 5 Years, Protected Product.",
+			"pilihan":[
+				{
+					"index":0,
+					"default":"Button_Strike-Currency.png",
+					"click":"Button_Strike-Currency_TAP.png"
+				},
+				{
+					"index":1,
+					"default":"Button_Market-Linked-Deposit.png",
+					"click":"Button_Market-Linked-Deposit_TAP.png"
+				},
+				{
+					"index":2,
+					"default":"Button_Swap-Depo.png",
+					"click":"Button_Swap-Depo_TAP.png"
+				}
+			],
+			"jawaban":[1]
+		},
+		{
+			"person":{
+				"idle":"assets/image/RiskDecision/MC_CIMB_J05C03M05_Chara idle2_01_v.0.0.0.1.png",
+				"up":"assets/image/RiskDecision/MC_CIMB_J05C03M05_Chara walk2_02_v.0.0.0.1.png",
+				"down":"assets/image/RiskDecision/MC_CIMB_J05C03M05_Chara walk2_01_v.0.0.0.1.png"
+			},
+			"risk":"High Risk",
+			"risk_desc":"High Return & High Risk Product.",
+			"pilihan":[
+				{
+					"index":0,
+					"default":"Button_Strike-Currency.png",
+					"click":"Button_Strike-Currency_TAP.png"
+				},
+				{
+					"index":1,
+					"default":"Button_Market-Linked-Deposit.png",
+					"click":"Button_Market-Linked-Deposit_TAP.png"
+				},
+				{
+					"index":2,
+					"default":"Button_Swap-Depo.png",
+					"click":"Button_Swap-Depo_TAP.png"
+				}
+			],
+			"jawaban":[0]
+		},
+		{
+			"person":{
+				"idle":"assets/image/RiskDecision/MC_CIMB_J05C03M05_Chara idle3_01_v.0.0.0.1.png",
+				"up":"assets/image/RiskDecision/MC_CIMB_J05C03M05_Chara walk3_02_v.0.0.0.1.png",
+				"down":"assets/image/RiskDecision/MC_CIMB_J05C03M05_Chara walk3_01_v.0.0.0.1.png"
+			},
+			"risk":"Conservative Risk",
+			"risk_desc":"Low Volatile, Low Risk Product & 3 months investment.",
+			"pilihan":[
+				{
+					"index":0,
+					"default":"Button_Strike-Currency.png",
+					"click":"Button_Strike-Currency_TAP.png"
+				},
+				{
+					"index":1,
+					"default":"Button_Market-Linked-Deposit.png",
+					"click":"Button_Market-Linked-Deposit_TAP.png"
+				},
+				{
+					"index":2,
+					"default":"Button_Swap-Depo.png",
+					"click":"Button_Swap-Depo_TAP.png"
+				}
+			],
+			"jawaban":[2]
+		},
+		{
+			"person":{
+				"idle":"assets/image/RiskDecision/MC_CIMB_J05C03M05_Chara idle4_01_v.0.0.0.1.png",
+				"up":"assets/image/RiskDecision/MC_CIMB_J05C03M05_Chara walk4_02_v.0.0.0.1.png",
+				"down":"assets/image/RiskDecision/MC_CIMB_J05C03M05_Chara walk4_01_v.0.0.0.1.png"
+			},
+			"risk":"High Risk",
+			"risk_desc":"High Risk Product & 7 days investment (non IDR).",
+			"pilihan":[
+				{
+					"index":0,
+					"default":"Button_Strike-Currency.png",
+					"click":"Button_Strike-Currency_TAP.png"
+				},
+				{
+					"index":1,
+					"default":"Button_Market-Linked-Deposit.png",
+					"click":"Button_Market-Linked-Deposit_TAP.png"
+				},
+				{
+					"index":2,
+					"default":"Button_Swap-Depo.png",
+					"click":"Button_Swap-Depo_TAP.png"
+				}
+			],
+			"jawaban":[0]
+		},
+		{
+			"person":{
+				"idle":"assets/image/RiskDecision/MC_CIMB_J05C03M05_Chara idle5_01_v.0.0.0.1.png",
+				"up":"assets/image/RiskDecision/MC_CIMB_J05C03M05_Chara walk5_02_v.0.0.0.1.png",
+				"down":"assets/image/RiskDecision/MC_CIMB_J05C03M05_Chara walk5_01_v.0.0.0.1.png"
+			},
+			"risk":"Growth Risk",
+			"risk_desc":"Higher than Deposit, Low Risk Product & No FX Volatality.",
+			"pilihan":[
+				{
+					"index":0,
+					"default":"Button_Strike-Currency.png",
+					"click":"Button_Strike-Currency_TAP.png"
+				},
+				{
+					"index":1,
+					"default":"Button_Market-Linked-Deposit.png",
+					"click":"Button_Market-Linked-Deposit_TAP.png"
+				},
+				{
+					"index":2,
+					"default":"Button_Swap-Depo.png",
+					"click":"Button_Swap-Depo_TAP.png"
+				}
+			],
+			"jawaban":[1]
+		}
+	]
+}
