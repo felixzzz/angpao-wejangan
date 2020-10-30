@@ -9,8 +9,8 @@ var Game = function(){
 	this.startDate = this.getCurrDateTimestamp();
 	this.life_max = 5;
 	this.game_data = {};
-	// this.base_url = "https://localhost:8012";
-	this.base_url = "https://project-angpao-wejangan.vercel.app/";
+	// this.base_url = "http://localhost:8012/project_angpao_wejangan";
+	this.base_url = "https://project-angpao-wejangan.vercel.app";
 	this.name;
 
 	$.get("config/templete_content.json",function(e){
