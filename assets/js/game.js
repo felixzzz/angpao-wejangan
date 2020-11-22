@@ -11,7 +11,7 @@ var Game = function(){
 	this.game_data = {};
 	// this.base_url = "http://localhost:8012/project_angpao_wejangan";
     // this.base_url = "http://angpao.test";
-    this.base_url = "https://project-angpao-wejangan.vercel.app";
+    this.base_url = "https://angpao-wejangan.vercel.app";
 	this.name;
 
 	$.get("config/templete_content.json",function(e){
