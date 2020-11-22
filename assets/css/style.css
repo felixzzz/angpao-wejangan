@@ -150,10 +150,19 @@
 	/*display: table-cell;*/
 	position: relative;
 	/*top: 46vh;*/
-	border: 1px solid #FFF;
+	/*border: 1px solid #FFF;*/
     /*background: rgba(0,0,0,0.5);*/
 }
 
+.guangji-header{
+	background: url('/assets/image/cover/logo-gj.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-bottom: 20px;
+	background-size: contain;
+	height: 200px;
+
+}
 /*@media only screen and (orientation: landscape) {
 	#content .content-cover-wrap{
 		top: 46vh;

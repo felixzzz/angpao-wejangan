@@ -10,8 +10,8 @@ var Game = function(){
 	this.life_max = 5;
 	this.game_data = {};
 	// this.base_url = "http://localhost:8012/project_angpao_wejangan";
-    // this.base_url = "http://angpao.test";
-    this.base_url = "https://angpao-wejangan.vercel.app";
+    this.base_url = "http://angpao.test";
+    // this.base_url = "https://angpao-wejangan.vercel.app";
 	this.name;
 
 	$.get("config/templete_content.json",function(e){
@@ -62,14 +62,21 @@ Game.prototype.create_slide = function() {
 					alert("Harap isi nama anda!");
 				}else{
 					game.name = val;
+                    console.log($this);
 					$this.nextSlide();
 				}
 			});
 
 			$(".prev_page").click(function(e){
+				console.log(e);
+				console.log($this);
 				$this.audio.audioButton.play();
 				$this.prevSlide();
 			});
+            $(".back_home").click(function(e){
+                $this.audio.audioButton.play();
+                $this.setSlide(0);
+            });
 		});
 	}
 };
