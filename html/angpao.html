@@ -2,7 +2,6 @@
 
 <div class="slider-content" style="text-align: center;display: table;">
 	<div class="cover-wrap" style="text-align: center;display: table-cell;vertical-align: top;">
-		<div class="guangji-header" style=""></div>
 		<img id="wejangan" class="img_click" src="assets/image/cover/angpao.png" style="width: 100%;">
 				<button title="mulai" class="btn-start img_click" style="border-radius: 16px;background: rgba(0,0,0,0.1);margin-bottom: 1vh;position: unset;transform: unset;margin-top: 4vh;background:#1d8bec;">Download</button>
 				<button class="btn-start back_home" style="border-radius: 16px;background: rgba(0,0,0,0.1);margin-bottom: 1vh;position: unset;transform: unset;margin-top: 1vh;background:darkred;">Kembali</button>
@@ -10,8 +9,9 @@
 	</div>
 
 <script>
-    let rand_que =Math.floor(Math.random() * 120) + 1
+    let rand_que =Math.floor(Math.random() * 300) + 1
     let url = game.base_url+"/assets/image/wejangan/png/"+rand_que+".png";
+    url = game.base_url+"/assets/image/wejangan/card portrait.png";
 
     $(document).ready(function(){
         console.log(game.name);
