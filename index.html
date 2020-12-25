@@ -322,11 +322,42 @@
     <script src="assets/js/hammer.min.js"></script>
     <script src="assets/js/jquery-collision.min.js"></script>
 
+
+    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+
+    <script>
+        var config = {
+            apiKey: "AIzaSyACZmf7hkGGaCdC_FxQae1QCjqJq1zFuN8",
+            authDomain: "angpao-wejangan.firebaseapp.com",
+            databaseURL: "https://angpao-wejangan-default-rtdb.firebaseio.com",
+        };
+        firebase.initializeApp(config);
+
+        // Get a reference to the database service
+        var database = firebase.database();
+
+        function writeUserData(name, wejangan) {
+            firebase.database().ref('users').set({
+                username: name,
+                wejangan : wejangan
+            });
+        }
+    </script>
     <script type="text/javascript">
     var game;
     $(document).ready(function(){
         game = new Game();
     });
+
     </script>
     
 </body>
