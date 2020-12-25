@@ -346,8 +346,11 @@
         var database = firebase.database();
 
         function writeUserData(name, wejangan) {
-            firebase.database().ref('users').set({
-                username: name,
+
+            var postListRef = firebase.database().ref('users');
+            var newPostRef = postListRef.push();
+            newPostRef.set({
+                name: name,
                 wejangan : wejangan
             });
         }
