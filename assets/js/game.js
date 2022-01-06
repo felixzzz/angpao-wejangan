@@ -12,7 +12,8 @@ var Game = function(){
 	// this.base_url = "http://localhost:8012/project_angpao_wejangan";
     // this.base_url = "https://angpao.guangji.id";
     // this.base_url = "https://angpao-wejangan.vercel.app";
-	this.base_url ="https://angpao-wejangan-3pzor.ondigitalocean.app";
+	// this.base_url ="https://angpao-wejangan-3pzor.ondigitalocean.app";
+	this.base_url ="";
 	this.name;
 
 	$.get("config/templete_content.json",function(e){
